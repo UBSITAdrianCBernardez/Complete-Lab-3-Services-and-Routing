@@ -1,0 +1,70 @@
+<h2>Supplier Details</h2>
+
+@if (supplier) {
+  <div class="details-card">
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input id="id" [(ngModel)]="supplier.id" name="id" readonly />
+    </div>
+
+    <div class="form-group">
+      <label for="supplierName">Supplier Name</label>
+      <input
+        id="supplierName"
+        [(ngModel)]="supplier.supplierName"
+        name="supplierName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input id="location" [(ngModel)]="supplier.location" name="location" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" [(ngModel)]="supplier.email" name="email" />
+    </div>
+
+    <div class="form-group">
+      <label for="contactPerson">Contact Person</label>
+      <input
+        id="contactPerson"
+        [(ngModel)]="supplier.contactPerson"
+        name="contactPerson"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input id="phone" [(ngModel)]="supplier.phone" name="phone" />
+    </div>
+
+    <div class="form-group">
+      <label for="status">Status</label>
+      <input id="status" [(ngModel)]="supplier.status" name="status" />
+    </div>
+
+    <div class="form-group">
+      <label for="productsSupplied">Products Supplied</label>
+      <textarea
+        id="productsSupplied"
+        [(ngModel)]="productsText"
+        name="productsSupplied"
+        rows="4"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      <textarea id="notes" [(ngModel)]="supplier.notes" name="notes" rows="3"></textarea>
+    </div>
+
+    <div class="button-group">
+      <button type="button" class="save-btn" (click)="saveChanges()">Save</button>
+      <button type="button" class="back-btn" (click)="goBack()">Back</button>
+    </div>
+  </div>
+} @else {
+  <p class="not-found">Supplier not found.</p>
+}

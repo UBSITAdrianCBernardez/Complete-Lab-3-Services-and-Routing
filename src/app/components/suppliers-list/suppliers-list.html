@@ -1,0 +1,26 @@
+<h2>Suppliers Management</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Supplier Name</th>
+      <th>Contact Person</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (supplier of suppliers; track supplier.id) {
+      <tr>
+        <td>{{ supplier.id }}</td>
+        <td>{{ supplier.supplierName }}</td>
+        <td>{{ supplier.contactPerson }}</td>
+        <td>
+          <button type="button" (click)="viewSupplierDetails(supplier.id)">
+            View
+          </button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

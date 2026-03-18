@@ -1,0 +1,71 @@
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.details-card {
+  width: 70%;
+  margin: 0 auto;
+  padding: 24px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[readonly] {
+  background: #f3f3f3;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #111;
+}
+
+.back-btn {
+  background: #666;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.not-found {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
